@@ -15,23 +15,24 @@ import random
 from datetime import datetime, timedelta
 
 # --- Configuration ---
-BOT_NAME = "OTP Bot"
-USERNAME = "username"
-PASSWORD = "password"
+BOT_NAME = "Otpcarrier Bot"
+USERNAME = "somir06"
+PASSWORD = "942006ra"
 DB_FILE = "sms_database_np.db" 
 
 # --- Telegram Configuration ---
-TELEGRAM_BOT_TOKEN = "bot id"
-DEFAULT_GROUP_CHAT_ID = "chat id" 
-DM_CHAT_ID = "your id" 
+TELEGRAM_BOT_TOKEN = "8431727184:AAHNDgOGcXfNeRVPX1w6IEAUks82Lu0xyHM"
+DEFAULT_GROUP_CHAT_ID = "-1002229919396" 
+DM_CHAT_ID = "7494475905" 
 
 # --- New Configuration (Developer Info Removed from Message) ---
-DEVELOPER_NAME = "爱 Ƒꫝʏsꫝʟ Ⓐ ¿ "
-DEVELOPER_TG_ID = "your id" 
+DEVELOPER_NAME = " Mr. Innocent"
+DEVELOPER_TG_ID = "7494475905" 
 
 # --- API Endpoints ---
-BASE_URL = "http://45.82.67.20/ints"
-DOMAIN_URL = "http://45.82.67.20"
+BASE_URL = "http://51.89.99.105/NumberPanel/login"
+DOMAIN_URL = "http://51.89.99.105/NumberPanel/login
+"
 LOGIN_PAGE_URL = f"{BASE_URL}/"
 SMS_HTML_PAGE_URL = f"{BASE_URL}/agent/SMSCDRReports" 
 
