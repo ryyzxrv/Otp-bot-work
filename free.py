@@ -30,10 +30,9 @@ DEVELOPER_NAME = " Mr. Innocent"
 DEVELOPER_TG_ID = "7494475905" 
 
 # --- API Endpoints ---
-BASE_URL = "http://51.89.99.105/NumberPanel/login"
-DOMAIN_URL = "http://51.89.99.105/NumberPanel/login
-"
-LOGIN_PAGE_URL = f"{BASE_URL}/"
+BASE_URL = "http://51.89.99.105/NumberPanel"
+DOMAIN_URL = "http://51.89.99.105/NumberPanel"
+LOGIN_PAGE_URL = f"{BASE_URL}/login"
 SMS_HTML_PAGE_URL = f"{BASE_URL}/agent/SMSCDRReports" 
 
 POTENTIAL_API_URLS = [
