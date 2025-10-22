@@ -21,13 +21,13 @@ PASSWORD = "942006ra"
 DB_FILE = "sms_database_np.db" 
 
 # --- Telegram Configuration ---
-TELEGRAM_BOT_TOKEN = "8431727184:AAHNDgOGcXfNeRVPX1w6IEAUks82Lu0xyHM"
-DEFAULT_GROUP_CHAT_ID = "-1002229919396" 
+TELEGRAM_BOT_TOKEN = "8303159307:AAHtIbXQJt0DjHBSUJSLhR1UZVKYJpDQuGI"
+DEFAULT_GROUP_CHAT_ID = "-1002905110441" 
 DM_CHAT_ID = "7494475905" 
 
 # --- New Configuration (Developer Info Removed from Message) ---
-DEVELOPER_NAME = " Mr. Innocent"
-DEVELOPER_TG_ID = "7494475905" 
+DEVELOPER_NAME = "vinnzz"
+DEVELOPER_TG_ID = "7562165596" 
 
 # --- API Endpoints ---
 BASE_URL = "http://51.89.99.105/NumberPanel"
