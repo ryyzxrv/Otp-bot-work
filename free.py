@@ -132,18 +132,18 @@ def format_telegram_message(recipient_number, sender_name, message, otp, sms_tim
     # চূড়ান্ত মেসেজ তৈরি করা
     return f"""✅ {country_flag} *{country_name} {service_name} OTP Code Received!*
 ━━━━━━━━━━━━━━━━━━━━
-📱 *Number:* `{recipient_number}`
-🌍 *Country:* {country_flag} {country_name}
-⚙️ *Service:* {service_name}
-🔒 *OTP Code:* `{otp}`
-⏳ *Time:* `{sms_time}`
+📱 *𝐍𝐮𝐦𝐛𝐞𝐫:* `{recipient_number}`
+🌍 *𝐂𝐨𝐮𝐧𝐭𝐫𝐲:* {country_flag} {country_name}
+⚙️ *𝐒𝐞𝐫𝐯𝐢𝐜𝐞:* {service_name}
+🔒 *𝐎𝐓𝐏 𝐂𝐨𝐝𝐞:* `{otp}`
+⏳ *𝐓𝐢𝐦𝐞:* `{sms_time}`
 ━━━━━━━━━━━━━━━━━━━━
-*Message:*
+*Mᴇssᴀɢᴇ:*
 ```{message}```
 ━━━━━━━━━━━━━━━━━━━━
 *📖 いくつかの言葉:*
-```{verse}
-— 決して諦めないで```"""
+```“決して諦めないで
+— 誰か```"""
 
 class TelegramSender:
     def __init__(self, token, stop_signal):
@@ -243,10 +243,11 @@ def start_watching_sms(session, destination_chat_id):
                 sms_list = json_data['aaData']
                 print(f"    - Found {len(sms_list)} SMS entries in the API response.")
                 
-                for sms_data in reversed(sms_list):
-                    if len(sms_data) > 4:
-                        dt, rc, sn, msg = str(sms_data[0]), str(sms_data[2]), str(sms_data[3]), str(sms_data[5])
-                        
+            for sms_data in reversed(sms_list):
+                print(f"DEBUG sms_data: {sms_data}")
+                  if len(sms_data) > 5:
+                     dt, rc, sn, msg = str(sms_data[0]), str(sms_data[2]), str(sms_data[3]), str(sms_data[4])
+          
                         if not msg or not rc or rc.strip() == '0' or len(rc.strip()) < 5:
                             print(f"    - Ignoring invalid/empty SMS data: Number='{rc}', Message='{msg}'")
                             continue
