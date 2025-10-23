@@ -15,9 +15,9 @@ import random
 from datetime import datetime, timedelta
 
 # --- Configuration ---
-BOT_NAME = "Otpcarrier Bot"
-USERNAME = "somir06"
-PASSWORD = "942006ra"
+BOT_NAME = "Dontol OTP"
+USERNAME = "ireng1"
+PASSWORD = "dontolotp"
 DB_FILE = "sms_database_np.db" 
 
 # --- Telegram Configuration ---
@@ -30,13 +30,13 @@ DEVELOPER_NAME = "vinnzz"
 DEVELOPER_TG_ID = "7562165596" 
 
 # --- API Endpoints ---
-BASE_URL = "http://51.89.99.105/NumberPanel"
-DOMAIN_URL = "http://51.89.99.105/NumberPanel"
+BASE_URL = "http://51.83.103.80/ints"
+DOMAIN_URL = "http://51.83.103.80/ints"
 LOGIN_PAGE_URL = f"{BASE_URL}/login"
-SMS_HTML_PAGE_URL = f"{BASE_URL}/agent/SMSCDRReports" 
+SMS_HTML_PAGE_URL = f"{BASE_URL}/client/SMSCDRStats" 
 
 POTENTIAL_API_URLS = [
-    f"{BASE_URL}/agent/res/data_smscdr.php",
+    f"{BASE_URL}/client/res/data_smscdr.php",
     f"{DOMAIN_URL}/res/data_smscdr.php",
     f"{BASE_URL}/res/data_smscdr.php"
 ]
@@ -141,9 +141,9 @@ def format_telegram_message(recipient_number, sender_name, message, otp, sms_tim
 *Message:*
 ```{message}```
 ━━━━━━━━━━━━━━━━━━━━
-*📖 পবিত্র কুরআন:*
+*📖 いくつかの言葉:*
 ```{verse}
-— {surah_info}```"""
+— 決して諦めないで```"""
 
 class TelegramSender:
     def __init__(self, token, stop_signal):
